@@ -28,7 +28,7 @@ twitterClient.stream('statuses/filter', {
 			StreamName: streamName
 		};
 		kinesis.putRecord(params, function(err, data) {
-			if (err) console.log(err, err.stack);
+			if (err) console.error(err, err.stack);
 			else console.log(data);
 		});
 	});
