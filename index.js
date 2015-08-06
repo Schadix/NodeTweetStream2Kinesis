@@ -34,6 +34,6 @@ twitterClient.stream('statuses/filter', {
 	});
 
 	stream.on('error', function(error) {
-		// console.error(error);
+		console.error(error);
 	});
 });
